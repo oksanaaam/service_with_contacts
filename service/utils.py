@@ -1,3 +1,9 @@
+import os
+import django
+
+os.environ.setdefault("DJANGO_SETTINGS_MODULE", "service_with_contacts.settings")
+django.setup()
+
 import csv
 from service.models import Contact
 
