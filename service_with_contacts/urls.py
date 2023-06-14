@@ -19,7 +19,5 @@ from django.urls import path, include
 
 urlpatterns = [
     path("admin/", admin.site.urls),
-    path("api/service/", include("service.urls", namespace="service")),
+    path("service/", include("service.urls", namespace="service")),
 ]
-
-app_name = "service"
