@@ -47,8 +47,7 @@ INSTALLED_APPS = [
     "django.contrib.messages",
     "django.contrib.staticfiles",
     "rest_framework",
-    "drf_spectacular",
-    "django_extensions",
+    "drf_yasg",
     "service",
 ]
 
@@ -67,8 +66,7 @@ ROOT_URLCONF = "service_with_contacts.urls"
 TEMPLATES = [
     {
         "BACKEND": "django.template.backends.django.DjangoTemplates",
-        "DIRS": []
-        ,
+        "DIRS": [],
         "APP_DIRS": True,
         "OPTIONS": {
             "context_processors": [
@@ -138,3 +136,8 @@ STATIC_URL = "static/"
 # https://docs.djangoproject.com/en/4.2/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = "django.db.models.BigAutoField"
+
+
+SWAGGER_SETTINGS = {
+    "DEFAULT_INFO": "service_with_contacts.urls.swagger_info",
+}
