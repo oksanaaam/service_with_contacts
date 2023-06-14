@@ -9,7 +9,7 @@ from service.models import Contact
 
 
 API_URL = "https://api.nimble.com/api/v1/contacts"
-HEADERS = {"Authorization": "Bearer dpeiNkeJZCOUEIMThVOzp6JdTa3KIg"}
+HEADERS = {"Authorization": os.environ["HEADERS_AUTHORIZATION"]}
 
 
 def update_contacts():
