@@ -20,5 +20,6 @@ def import_data_from_csv(file_path):
             contact.save()
 
 
-file_path = "../data/nimble_contacts.csv"
-import_data_from_csv(file_path)
+if __name__ == "__main__":
+    file_path = "../data/nimble_contacts.csv"
+    import_data_from_csv(file_path)

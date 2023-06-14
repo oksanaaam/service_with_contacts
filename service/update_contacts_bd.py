@@ -40,3 +40,7 @@ def update_contacts():
             print(f"Created Contact: {contact_obj}")
         else:
             print(f"Updated Contact: {contact_obj}")
+
+
+if __name__ == "__main__":
+    update_contacts()
