@@ -65,7 +65,12 @@ Perform a search for contacts by making a GET request to the search API endpoint
 
 GET "http://localhost:8000/service/contact/search/?query=<search_query>"
 Replace <search_query> with the desired text to search for in the contacts.
-![img.png](img.png)
+
+![img.png](img for README.md/img_1.png)
+
+![img.png](img for README.md/img_3.png)
+
+![img.png](img for README.md/img.png)
 
 The response will be a list of contacts matching the search query.
 
